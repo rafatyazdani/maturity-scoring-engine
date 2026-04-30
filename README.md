@@ -40,8 +40,26 @@ For each framework it produces:
 
 ## Quick Start
 
+### Option A — Interactive Dashboard (recommended)
+
 ```bash
 git clone https://github.com/rafatyazdani/maturity-scoring-engine.git
+cd maturity-scoring-engine
+
+# Create and activate a virtual environment
+python -m venv venv
+venv\Scripts\Activate.ps1        # Windows
+# source venv/bin/activate       # Mac/Linux
+
+pip install -r requirements.txt
+python -m streamlit run app.py
+```
+
+Opens at `http://localhost:8501`. Select a framework, adjust scores with sliders, and download a full markdown report.
+
+### Option B — Command Line
+
+```bash
 cd maturity-scoring-engine/engine
 
 # Score all three frameworks from one input file
@@ -53,7 +71,7 @@ python scorer.py --framework cis_v8    --json ../examples/sample_all.json
 python scorer.py --framework iso_27001 --json ../examples/sample_all.json
 ```
 
-No dependencies beyond Python 3.9+ standard library.
+The CLI requires no dependencies beyond Python 3.9+ standard library. The dashboard requires `streamlit`, `matplotlib`, `pandas`, and `numpy` (see `requirements.txt`).
 
 ---
 
