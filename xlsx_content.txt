@@ -1,0 +1,159 @@
+Sheet names:
+  📋 Overview
+  📊 Maturity Scoring
+  🔍 Gap Analysis
+  🗺 Roadmap
+  💰 Budget & ROI
+  ⚙ Architecture
+
+Content sample:
+  [0] OrionMaturity
+  [1] Automated, Data-Driven Security Program Maturity Scoring Engine
+  [2] Project Sponsor:
+  [3] Security Practice Lead
+  [4] Version:
+  [5] v1.0
+  [6] Date:
+  [7] 2025
+  [8]   🔍  PROBLEM STATEMENT
+  [9]   ⚠  Too manual — relies on interviews & spreadsheets
+  [10]   ⚠  Subjective — results vary widely across assessors
+  [11]   ⚠  Static — not tied to real-time telemetry or configs
+  [12]   ⚠  Time-consuming — 4–12 weeks per assessment cycle
+  [13]   ⚠  Disconnected — ignores actual technical configurations
+  [14]   ⚠  Expensive — out of reach for mid-sized organizations
+  [15]   🎯  PROJECT OBJECTIVES
+  [16] #
+  [17] Objective
+  [18] Description
+  [19] Automated Scoring
+  [20] Ingest real data from AWS, IAM, EDR, vuln tools — zero manual interviews
+  [21] Framework Mapping
+  [22] Map controls to NIST CSF 2.0, CIS Controls v8, ISO 27001:2022
+  [23] Quantitative Output
+  [24] Produce numeric maturity scores, heat maps, and benchmarking
+  [25] Gap Analysis
+  [26] Identify control gaps and deficiencies across all domains
+  [27] Remediation Engine
+  [28] Generate prioritized roadmap with cost and effort estimates
+  [29] Continuous Scoring
+  [30] Move from point-in-time assessments to real-time maturity tracking
+  [31]   💡  STRATEGIC GAPS ADDRESSED
+  [32]   ▶  Control ROI Gap
+  [33] Ties maturity scoring directly to control effectiveness
+  [34]   ▶  GRC ↔ Quant Gap
+  [35] Converts qualitative maturity assessments into quantitative model inputs
+  [36]   ▶  AI-Augmented Modeling
+  [37] AI auto-scores evidence without human subjectivity or bias
+  [38]   ▶  Practical Tooling Gap
+  [39] Delivers a fast, usable tool — not another static framework
+  [40] Security Program Maturity Scoring Framework
+  [41]   MATURITY LEVEL DEFINITIONS  (CMM-Aligned Scale 1–5)
+  [42] Level
+  [43] Name
+  [44] Score
+  [45] Color
+  [46] Initial
+  [47] 1.0 – 1.9
+  [48] Ad-hoc, undocumented, reactive. No formal process exists.
+  [49] Developing
+  [50] 2.0 – 2.9
+  [51] Some documentation, inconsistently applied.
+  [52] Defined
+  [53] 3.0 – 3.9
+  [54] Documented, standardized processes deployed organization-wide.
+  [55] Managed
+  [56] 4.0 – 4.9
+  [57] Measured, monitored with KPIs. Metrics-driven management.
+  [58] Optimizing
+  [59] 5.0 – 5.9
+  [60] Continuously improving, automated, predictive capabilities.
+  [61]   DOMAIN MATURITY SCORES — NIST CSF 2.0
+  [62] Domain
+  [63] Sub-Domain
+  [64] Current Score
+  [65] Target Score
+  [66] Gap
+  [67] Priority
+  [68] Status
+  [69] GOVERN
+  [70] Policy & Governance
+  [71] 🟡 High
+  [72] Risk Management
+  [73] Supply Chain Risk
+  [74] IDENTIFY
+  [75] Asset Management
+  [76] Business Environment
+  [77] ⚪ Low
+  [78] Risk Assessment
+  [79] 🔴 Critical
+  [80] PROTECT
+  [81] Identity & Access Mgmt
+  [82] 🟢 Medium
+  [83] Awareness & Training
+  [84] Data Security
+  [85] Platform Security
+  [86] DETECT
+  [87] Anomalies & Events
+  [88] Security Monitoring
+  [89] RESPOND
+  [90] Incident Management
+  [91] Incident Analysis
+  [92] RECOVER
+  [93] Recovery Planning
+  [94] Improvements
+  [95] OVERALL AVERAGE
+  [96] Control Gap Analysis & Remediation Tracker
+  [97]   CRITICAL CONTROL GAPS — PRIORITIZED REMEDIATION BACKLOG
+  [98] Framework
+  [99] Control
+  [100] Current State
+  [101] Target State
+  [102] Effort
+  [103] Cost Est.
+  [104] Remediation
+  [105] Due (Qtr)
+  [106] NIST CSF 2.0
+  [107] GV.RM-06 Risk Tolerance
+  [108] Ad-hoc decisions
+  [109] Formal risk appetite stmt
+  [110] Low
+  [111] $15K–$30K
+  [112] Define & approve risk appetite policy
+  [113] Q1 2026
+  [114] CIS v8
+  [115] CIS 1 – Asset Inventory
+  [116] Partial CMDB
+  [117] Complete automated discovery
+  [118] Medium
+  [119] $40K–$80K
+  [120] Deploy asset discovery tool (e.g., Axonius)
+  [121] CIS 5 – Account Mgmt
+  [122] Manual IAM review
+  [123] Automated IAM governance
+  [124] $30K–$60K
+  [125] Implement IGA platform (e.g., SailPoint)
+  [126] Q2 2026
+  [127] ISO 27001
+  [128] A.8.2 Information Classification
+  [129] Informal
+  [130] Formal data classification
+  [131] $20K–$45K
+  [132] Deploy data classification tool
+  [133] DE.AE – Anomaly Detection
+  [134] Partial SIEM
+  [135] Full UEBA + SIEM tuning
+  [136] High
+  [137] $80K–$150K
+  [138] Tune SIEM, add UEBA capability
+  [139] CIS 11 – Data Recovery
+  [140] Irregular backups
+  [141] Automated, tested recovery
+  [142] $25K–$50K
+  [143] Implement backup automation & DR runbooks
+  [144] A.5.7 Threat Intelligence
+  [145] None
+  [146] Automated TI feeds
+  [147] $50K–$90K
+  [148] Subscribe to TI platform & integrate SIEM
+  [149] Q3 2026

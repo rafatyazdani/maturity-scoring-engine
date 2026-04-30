@@ -1,0 +1,100 @@
+{
+  "org": "Acme Corporation",
+  "assessor": "Rafat Yazdani, CISSP",
+
+  "nist_csf": {
+    "scores": {
+      "GOVERN": {
+        "policy_governance": 2.5,
+        "risk_management":   2.0,
+        "supply_chain_risk": 1.5
+      },
+      "IDENTIFY": {
+        "asset_management":     3.0,
+        "business_environment": 2.5,
+        "risk_assessment":      2.0
+      },
+      "PROTECT": {
+        "identity_access":    3.5,
+        "awareness_training": 2.5,
+        "data_security":      2.5,
+        "platform_security":  3.0
+      },
+      "DETECT": {
+        "anomalies_events":    2.0,
+        "security_monitoring": 2.5
+      },
+      "RESPOND": {
+        "incident_management": 2.0,
+        "incident_analysis":   2.0
+      },
+      "RECOVER": {
+        "recovery_planning": 2.0,
+        "improvements":      1.5
+      }
+    }
+  },
+
+  "cis_v8": {
+    "scores": {
+      "CIS01": 2.5,
+      "CIS02": 2.5,
+      "CIS03": 2.0,
+      "CIS04": 3.0,
+      "CIS05": 2.0,
+      "CIS06": 3.0,
+      "CIS07": 2.5,
+      "CIS08": 2.5,
+      "CIS09": 3.0,
+      "CIS10": 3.0,
+      "CIS11": 2.0,
+      "CIS12": 2.5,
+      "CIS13": 2.0,
+      "CIS14": 2.5,
+      "CIS15": 2.0,
+      "CIS16": 2.0,
+      "CIS17": 2.0,
+      "CIS18": 1.5
+    }
+  },
+
+  "iso_27001": {
+    "scores": {
+      "A5_org": {
+        "policies":      2.5,
+        "roles":         3.0,
+        "threat_intel":  1.5,
+        "supplier_mgmt": 2.0,
+        "incident_mgmt": 2.5
+      },
+      "A6_people": {
+        "screening":     3.0,
+        "awareness":     2.5,
+        "remote_working":3.0
+      },
+      "A7_physical": {
+        "perimeter":  3.5,
+        "equipment":  3.0,
+        "clear_desk": 3.0
+      },
+      "A8_tech": {
+        "endpoint":  3.0,
+        "iam":       3.0,
+        "crypto":    2.5,
+        "logging":   2.5,
+        "vuln_mgmt": 2.0,
+        "network":   2.5,
+        "sdlc":      2.0
+      }
+    },
+    "clause_scores": {
+      "C4":  3.0,
+      "C5":  2.5,
+      "C6":  2.0,
+      "C7":  2.5,
+      "C8":  2.5,
+      "C9":  2.0,
+      "C10": 2.0
+    }
+  }
+}

@@ -1,0 +1,32 @@
+name: Validate Scoring Engine
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    name: Run scorer against sample inputs
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Run all framework scorers
+        working-directory: engine
+        run: |
+          python scorer.py --all --json ../examples/sample_all.json --output /tmp/outputs/
+          echo "All reports generated successfully"
+
+      - name: Verify output files exist
+        run: |
+          test -f /tmp/outputs/nist_csf_report.md
+          test -f /tmp/outputs/cis_v8_report.md
+          test -f /tmp/outputs/iso_27001_report.md
+          echo "All output files present"
