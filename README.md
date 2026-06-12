@@ -161,6 +161,22 @@ This engine is designed to address the **GRC ↔ Quantification gap** — the di
 
 Output scores feed directly into the [CRQ-F Framework](https://github.com/rafatyazdani/cyber-risk-quantification) for financial risk modeling: a Defined (3.0) posture vs. a Managed (4.0) posture translates directly into different ALE estimates, control ROI calculations, and cyber insurance premiums.
 
+### v1 today, OrionMaturity tomorrow
+
+This repository is **v1** — a working scoring engine driven by manually entered inputs (sliders in the Streamlit UI, JSON for the CLI). It delivers roughly 20% of a larger product vision documented separately in `OrionMaturity_Project_Proposal.xlsx`.
+
+The product vision (OrionMaturity) is a maturity scoring platform that ingests **real telemetry** — AWS Config & Security Hub findings (via `boto3`), IAM / Azure AD permissions, vulnerability scanner output, EDR detection data, SIEM coverage, training platform completion rates — and produces scores **automatically**, with no manual interviews. It also covers AI-augmented scoring, peer benchmarking, JIRA export, continuous drift alerting, and a remediation roadmap engine.
+
+The next planned feature in **this** repo is **AWS Config / Security Hub ingestion via `boto3`** — one real data source feeding automatic scores, which is the v1 → v2 step that takes the engine from "another scoring tool" to "the tool that reads your environment instead of asking you to describe it."
+
+---
+
+## Related artifacts in the portfolio
+
+- For **AI-specific governance maturity** (not enterprise security program maturity), see [`ai-governance-toolkit`](https://github.com/rafatyazdani/ai-governance-toolkit). That toolkit's `maturity-scorecard.md` scores **AI governance program maturity**; this engine scores **enterprise security program maturity** (NIST CSF 2.0 / CIS v8 / ISO 27001:2022). The two are complementary, not duplicates.
+- Scores from this engine feed into the calibration inputs at [`cyber-risk-quantification`](https://github.com/rafatyazdani/cyber-risk-quantification) and the production application [`CRQ-Dashboard`](https://github.com/rafatyazdani/CRQ-Dashboard).
+- For the **cloud controls** that contribute to the maturity score, see [`cloud-security-governance`](https://github.com/rafatyazdani/cloud-security-governance) (Terraform IaC implementing the NIST 800-53 and ISO 27001 control set).
+
 ---
 
 ## License
@@ -169,4 +185,8 @@ Apache 2.0 — free to use, adapt, and deploy in commercial contexts with attrib
 
 ---
 
-*Built by a CISSP + CPA with 10+ years in GRC and cybersecurity strategy.*
+**Built by Rafat Yazdani** — CPA · CISSP · CISA · CCSK · AWS Certified
+Security Strategy & Cyber Risk Quantification — Accenture Security
+
+> Methodology backbone: **CRQ-F Framework** (Cyber Risk Quantification — Financial). Phase 1 — Data Calibration (maturity scores feed FAIR input calibration).
+> Portfolio overview: [github.com/rafatyazdani](https://github.com/rafatyazdani) — Methodology · Quantification math · Consulting products · Governance & maturity · Operations · Board output.
